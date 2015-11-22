@@ -1,0 +1,41 @@
+.header {
+	position: relative;
+
+
+	.logo {
+		padding: 2% 0 0 2%;
+
+	}
+}
+.logo {
+/*  margin:-100px 0 0 -84px;
+  @include position(absolute, 50% 0 0 50%);*/
+
+  svg {
+  	width: 10%;
+  	min-width: 70px;
+  	max-width: 100px;
+  }
+}
+
+/*logo svg animation*/
+.path {
+  @include vendor(animation, draw 5s forwards);
+  /*@include vendor(animation-delay, 2s);*/
+}
+
+@keyframes draw {
+  0% {
+    fill:transparent;  
+  }
+  100% {
+    
+    stroke-dashoffset: 0;
+    fill:white;
+  }
+}
+
+@-webkit-keyframes draw { 0%{ fill:transparent; } 100%{ stroke-dashoffset:0; fill:white; } }
+@-moz-keyframes draw { 0%{ fill:transparent; } 100%{ stroke-dashoffset:0; fill:white; } }
+@-o-keyframes draw { 0%{ fill:transparent; } 100%{ stroke-dashoffset:0; fill:white; } }
+@keyframes draw { 0%{ fill:transparent; } 100%{ stroke-dashoffset:0; fill:white; } }

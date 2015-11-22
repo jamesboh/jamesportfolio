@@ -1,0 +1,13 @@
+.footer {
+	background: #00032B url('/assets/img/james-hero-layer-2.png') no-repeat left bottom / cover;
+	background-size: 100%;
+
+	@media only screen and (max-width: 991px) {
+		background-size: 220%;	
+	}
+
+	p {
+	    text-align: center;
+	}
+
+}

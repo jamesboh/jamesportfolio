@@ -1,0 +1,62 @@
+/*@font-face {
+  font-family:'Font-Name';
+  src:url('../fonts/font-name.eot');
+  src:url('../fonts/font-name.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/font-name.woff') format('woff'),
+    url('../fonts/font-name.ttf') format('truetype'),
+    url('../fonts/font-name.svg#font-name') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}*/
+
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville|Josefin+Sans);
+
+h1,h2,h3,h4,h5,h6,p,a {
+	&.light {
+		color: white;
+	}
+	&.dark {
+		color: #565656;
+	}	
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+p,a,li {
+	font-family: 'Libre Baskerville', serif;
+	text-decoration: none;
+}
+
+/*font sizes and line heights*/
+h1 {
+	font-size: 4.4em;
+	line-height: 1.4;
+	@media only screen and (max-width : 480px) {
+		font-size: 4.4em*.7;
+	}
+}
+h2 {
+	font-size: 4.2em;
+	line-height: 1.2;
+	@media only screen and (max-width : 480px) {
+		font-size: 4.2em*.7;
+	}
+}
+h3 {
+	font-size: 3.6em;
+	line-height: 1.2;
+	@media only screen and (max-width : 480px) {
+		font-size: 3.6em*.7;
+	}
+}
+p {
+	font-size: 1em;
+	line-height: 1.8;
+}
+
+/*reusable classes*/
+.caps {
+	text-transform: uppercase;	
+}
